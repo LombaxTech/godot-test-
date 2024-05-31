@@ -1,7 +1,15 @@
-[gd_scene format=3 uid="uid://j2gc17t25cpp"]
+[gd_scene load_steps=2 format=3 uid="uid://j2gc17t25cpp"]
+
+[ext_resource type="Texture2D" uid="uid://mm3aijd0e0ma" path="res://icon.svg" id="1_8plap"]
 
 [node name="world" type="Node2D"]
 
 [node name="bg" type="ColorRect" parent="."]
 offset_right = 1202.0
 offset_bottom = 703.0
+
+[node name="player" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+position = Vector2(537, 422)
+texture = ExtResource("1_8plap")
